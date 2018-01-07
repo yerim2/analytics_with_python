@@ -216,7 +216,7 @@ data_frame_value_meets_condition.to_csv(output_file, index=False)
 - `.read_csv()` : `data_frame` 변수에 input_file.csv를 DataFrame 형태의 데이터로 읽어 저장한다.
 - `data_frame['Cost']`를 재정의: `Cost` 열에 해당하는 데이터에 `$` 기호를 제거 하고 `float` 타입으로 형태 변환을 한다.	
 - `.loc`함수를 이용하여 필터링 조건을 작성한다.
-	-  `.str.contains(pattern)`: 문자열이 pattern을 포함하는지 여부를 판단한다.
+	-  `.contains(pattern)`: 문자열이 pattern을 포함하는지 여부를 판단한다.
 
 > `data_frame['Cost']` 의 타입은 `Series`이다. 이를 문자열로 취급하여 핸들링하려면 `.str`을 붙여 제공되는 여러가지 함수를 사용할 수 있다.  
 > 
@@ -355,7 +355,7 @@ data_frame_value_matches_pattern = data_frame.ix[data_frame['Invoice Number'].st
 data_frame_value_matches_pattern.to_csv(output_file, index=False)
 ```
 
-- `.str.startswith(pattern)`: pattern으로 시작하는 문자열인지 판단한다.
+- `.startswith(pattern)`: pattern으로 시작하는 문자열인지 판단한다.
 - `.ix`
 
 > [.str.startswith()](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.str.startswith.html)
