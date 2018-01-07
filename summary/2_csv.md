@@ -356,9 +356,8 @@ data_frame_value_matches_pattern.to_csv(output_file, index=False)
 ```
 
 - `.startswith(pattern)`: pattern으로 시작하는 문자열인지 판단한다.
-- `.ix`
 
-> [.str.startswith()](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.str.startswith.html)
+> [.startswith()](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.str.startswith.html)
 
 # 2.6 특정 열 선택하기
 - 열의 인덱스 값을 사용하는 방법
